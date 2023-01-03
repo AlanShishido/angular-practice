@@ -1,23 +1,23 @@
-import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   template: `
-    <app-title title="Olá Alguma coisa"></app-title>
+    <app-data-binding></app-data-binding>
     <router-outlet></router-outlet>
     `,
   // templateUrl: './app.component.html',
   // styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements	OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
+export class AppComponent implements	OnInit{
   constructor(){}
 
   ngOnInit(): void {}
-  ngOnChanges(): void {}
-  ngDoCheck(): void {}
-  ngAfterContentInit(): void {}
-  ngAfterContentChecked(): void {}
-  ngAfterViewInit(): void {}
-  ngAfterViewChecked(): void {}
-  ngOnDestroy(): void {}
+  // ngOnChanges(): void {}
+  // ngDoCheck(): void {}
+  // ngAfterContentInit(): void {}
+  // ngAfterContentChecked(): void {}
+  // ngAfterViewInit(): void {}
+  // ngAfterViewChecked(): void {}
+  // ngOnDestroy(): void {}
 }
