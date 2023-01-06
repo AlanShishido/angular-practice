@@ -1,0 +1,32 @@
+<!-- <p>diretivas-estruturais works!</p> -->
+
+<p *ngIf="condition; else elseBlock">True</p>
+<ng-template #elseBlock>
+    <p>False</p>
+</ng-template>
+
+<hr>
+
+<p *ngIf="conditionClick">True</p>
+<p *ngIf="!conditionClick">False</p>
+
+<button (click)="onClick()" >Clicar</button>
+
+<hr>
+
+<ul>
+  <li *ngFor="let item of list; let i = index;" (click)="onClickEventList(i)"
+  > {{ i + 1 }} - {{item.nome}}</li>
+</ul>
+
+<button (click)="onClickAddList()" >Clicar</button>
+
+<hr>
+
+
+<input type="text" [(ngModel)]="nome" >
+<div [ngSwitch]="nome">
+  <p *ngSwitchCase="'alan'">Alan</p>
+  <p *ngSwitchCase="'aline'">Aline</p>
+  <p *ngSwitchDefault> Deu Ruim</p>
+</div>
