@@ -11,6 +11,8 @@ export class DiretivasAtributosComponent implements OnInit {
   public backgroundColor: string = "red"
   public nome: string = ''
   public list: Array<{ 'nome': string }> = [{nome: 'alan'}]
+  public data: Date = new Date()
+
 
   ngOnInit(){
     setInterval( ()=> {
